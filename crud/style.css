@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(151, 118, 118);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    position: absolute;
+    width: 400px;
+    background-color: rgb(246, 246, 246);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+
+.header {
+    background-image: url(image/Joker.jpg);
+    background-size: cover;
+    padding: 90px 30px;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.header p {
+    font-size: x-small;
+}
+
+.login-area {
+    text-align: center;
+    padding: 50px 50px 30px 50px;
+}
+
+.username,
+.password {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(55, 10, 114, .5);
+    margin-bottom: 15px;
+    transition: 0, 5s;
+}
+
+.username::placeholder,
+.password::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.username:focus,
+.password:focus {
+    background-color: rgba(55, 10, 114, .7);
+}
+
+.login-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #10004e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: block;
+    font-size: x-small;
+    text-decoration: none;
+    color: rgba(55, 10, 114, 1);
+    margin-top: 10px;
+}
